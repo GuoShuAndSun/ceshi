@@ -1,0 +1,48 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.loveplusplus.update"
+4    android:versionCode="3"
+5    android:versionName="1.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="14"
+8-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="27" />
+9-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:6:5-67
+11-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+12-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:7:5-83
+12-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:7:22-80
+13
+14    <application>
+14-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:9:5-26:19
+15        <service
+15-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:10:9-12:40
+16            android:name="com.loveplusplus.update.DownloadService"
+16-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:11:13-44
+17            android:exported="false" />
+17-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:12:13-37
+18
+19        <provider
+19-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:14:9-24:20
+20            android:name="com.loveplusplus.update.UpdateApkFileProvider"
+20-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:15:13-50
+21            android:authorities="${applicationId}.update.provider"
+21-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:16:13-67
+22            android:exported="false"
+22-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:17:13-37
+23            android:grantUriPermissions="true" >
+23-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:18:13-47
+24            <meta-data
+24-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:20:13-22:60
+25                android:name="android.support.FILE_PROVIDER_PATHS"
+25-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:21:17-67
+26                android:resource="@xml/update_apk_paths" />
+26-->D:\TestApp\android-auto-update-master\library\src\main\AndroidManifest.xml:22:17-57
+27        </provider>
+28    </application>
+29
+30</manifest>

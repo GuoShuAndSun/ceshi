@@ -1,0 +1,24 @@
+com/loveplusplus/update/UpdateApkFileProvider.java
+ com.loveplusplus.update.UpdateApkFileProvider
+com/loveplusplus/update/HttpUtils.java
+ com.loveplusplus.update.HttpUtils
+com/loveplusplus/update/AppUtils.java
+ com.loveplusplus.update.AppUtils
+com/loveplusplus/update/StorageUtils.java
+ com.loveplusplus.update.StorageUtils
+com/loveplusplus/update/NotificationHelper.java
+ com.loveplusplus.update.NotificationHelper
+com/loveplusplus/update/DownloadService.java
+ com.loveplusplus.update.DownloadService
+com/loveplusplus/update/UpdateDialog.java
+ com.loveplusplus.update.UpdateDialog
+ com.loveplusplus.update.UpdateDialog$1
+ com.loveplusplus.update.UpdateDialog$2
+com/loveplusplus/update/Constants.java
+ com.loveplusplus.update.Constants
+com/loveplusplus/update/UpdateChecker.java
+ com.loveplusplus.update.UpdateChecker
+com/loveplusplus/update/CheckUpdateTask.java
+ com.loveplusplus.update.CheckUpdateTask
+com/loveplusplus/update/ApkUtils.java
+ com.loveplusplus.update.ApkUtils

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ceshi">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ceshi"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".play1_Activity" />
+
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity
+            android:name=".help"
+            android:label="@string/title_activity_help" />
+        <activity android:name=".include_player_actiivty" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".welecome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

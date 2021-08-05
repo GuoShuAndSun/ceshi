@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".include_player_actiivty">
+
+
+    <!--引入第三方库的视频播放与控制控件-->
+    <include
+        layout="@layout/simple_player_view_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/player"-->
+<!--        android:onClick="onClick_player"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="播放"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_centerInParent="true"/>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+include ':myUPlibrary'
+include ':myijklibrary'
+include ':app'
+rootProject.name = "ceshi"
+

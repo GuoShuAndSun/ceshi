@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+
+
+<!--    app:title="学堂"-->
+<!--    app:subtitle="网页前端"-->
+<!--    app:logo="@drawable/title_bar_xuetang"-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#0FB3A3"
+        app:titleTextColor="#FFFFFF"
+        app:titleMarginStart="1dp"
+        app:subtitleTextColor="#FFFFFF"
+        android:gravity="center"
+        app:navigationIcon="@drawable/title_bar_back"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title_bar_xuetang"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="65dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学知识"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上龙文"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <include-->
+<!--        layout="@layout/simple_player_view_player"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="180dp"/>-->
+
+<!--    <GridView-->
+<!--        android:id="@+id/gridview"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="center"-->
+<!--        android:horizontalSpacing="5dp"-->
+<!--        android:verticalSpacing="5dp"-->
+<!--        android:numColumns="2" />-->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+
+    <com.yy.mobile.rollingtextview.RollingTextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="00:00"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <include layout="@layout/button_layout"></include>
+
+</LinearLayout>
